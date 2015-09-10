@@ -1,4 +1,4 @@
-package com.github.cyl.autonews.pojo.cpi;
+package com.github.cyl.autonews.pojo.cpi.indicator;
 
 public class Indicator {
 	// 环比 month-on-month

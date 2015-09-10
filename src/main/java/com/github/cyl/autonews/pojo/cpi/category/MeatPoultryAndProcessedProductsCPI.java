@@ -1,6 +1,9 @@
-package com.github.cyl.autonews.pojo.cpi;
+package com.github.cyl.autonews.pojo.cpi.category;
 
-public class MeatAndPoultryCPI extends Indicator {
+import com.github.cyl.autonews.pojo.cpi.indicator.Indicator;
+
+//认证
+public class MeatPoultryAndProcessedProductsCPI extends Indicator {
 	private Indicator porkIndicator;
 	private Indicator beefIndicator;
 	private Indicator lambIndicator;
