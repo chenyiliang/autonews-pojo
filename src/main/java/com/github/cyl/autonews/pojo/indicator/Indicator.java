@@ -4,11 +4,29 @@ public class Indicator {
 	// 字段名
 	private String fieldName;
 	// 环比 month-on-month
-	private float mom;
+	private double mom;
 	// 同比 year-on-year
-	private float yoy;
+	private double yoy;
 	// 至当前时间，年平均
-	private float yavg;
+	private double yavg;
+
+	public Indicator() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Indicator(String fieldName, double mom, double yoy, double yavg) {
+		this.fieldName = fieldName;
+		this.mom = mom;
+		this.yoy = yoy;
+		this.yavg = yavg;
+	}
+
+	public Indicator(String fieldName, double mom, double yoy) {
+		super();
+		this.fieldName = fieldName;
+		this.mom = mom;
+		this.yoy = yoy;
+	}
 
 	public String getFieldName() {
 		return fieldName;
@@ -18,28 +36,34 @@ public class Indicator {
 		this.fieldName = fieldName;
 	}
 
-	public float getMom() {
+	public double getMom() {
 		return mom;
 	}
 
-	public void setMom(float mom) {
+	public void setMom(double mom) {
 		this.mom = mom;
 	}
 
-	public float getYoy() {
+	public double getYoy() {
 		return yoy;
 	}
 
-	public void setYoy(float yoy) {
+	public void setYoy(double yoy) {
 		this.yoy = yoy;
 	}
 
-	public float getYavg() {
+	public double getYavg() {
 		return yavg;
 	}
 
-	public void setYavg(float yavg) {
+	public void setYavg(double yavg) {
 		this.yavg = yavg;
 	}
 
+	public void setIndicator(Indicator indicator) {
+		this.fieldName = indicator.fieldName;
+		this.mom = indicator.mom;
+		this.yoy = indicator.yoy;
+		this.yavg = indicator.yavg;
+	}
 }

@@ -3,7 +3,7 @@ package com.github.cyl.autonews.pojo.cpi.category;
 import com.github.cyl.autonews.pojo.indicator.Indicator;
 
 //认证
-public class RecreationEducationAndCultureArticles {
+public class RecreationEducationAndCultureArticles extends Indicator {
 	private Indicator educationServices;// 认证
 	private Indicator touringAndOuting;// 认证
 
