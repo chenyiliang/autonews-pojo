@@ -1,176 +1,166 @@
 package com.github.cyl.autonews.pojo.cpi;
 
-import com.github.cyl.autonews.pojo.cpi.category.ClothingCPI;
-import com.github.cyl.autonews.pojo.cpi.category.FoodCPI;
-import com.github.cyl.autonews.pojo.cpi.category.HealthCareAndPersonalArticlesCPI;
-import com.github.cyl.autonews.pojo.cpi.category.HouseholdFacilitiesArticlesAndServicesCPI;
-import com.github.cyl.autonews.pojo.cpi.category.RecreationEducationAndCultureArticlesCPI;
-import com.github.cyl.autonews.pojo.cpi.category.ResidenceCPI;
-import com.github.cyl.autonews.pojo.cpi.category.TobaccoLiquorAndArticlesCPI;
-import com.github.cyl.autonews.pojo.cpi.category.TransportationAndCommunicationCPI;
-import com.github.cyl.autonews.pojo.cpi.indicator.Indicator;
+import com.github.cyl.autonews.pojo.cpi.category.Clothing;
+import com.github.cyl.autonews.pojo.cpi.category.Food;
+import com.github.cyl.autonews.pojo.cpi.category.HealthCareAndPersonalArticles;
+import com.github.cyl.autonews.pojo.cpi.category.HouseholdFacilitiesArticlesAndServices;
+import com.github.cyl.autonews.pojo.cpi.category.RecreationEducationAndCultureArticles;
+import com.github.cyl.autonews.pojo.cpi.category.Residence;
+import com.github.cyl.autonews.pojo.cpi.category.TobaccoLiquorAndArticles;
+import com.github.cyl.autonews.pojo.cpi.category.TransportationAndCommunication;
+import com.github.cyl.autonews.pojo.indicator.Indicator;
 
 public class CPI extends Indicator {
-	private Indicator urbanHouseholdIndicator;
-	private Indicator ruralHouseholdIndicator;
+	private Indicator urbanHousehold;
+	private Indicator ruralHousehold;
 
-	private Indicator foodIndicator;
-	private Indicator nonFoodIndicator;
+	private Indicator nonFood;
 
-	private Indicator consumerProductsIndicator;
-	private Indicator serviceIndicator;
+	private Indicator consumerProducts;
+	private Indicator service;
 
-	private Indicator nonFoodAndEnergyIndicator;
-	private Indicator nonVegetableAndFruitIndicator;
+	private Indicator nonFoodAndEnergy;
+	private Indicator nonVegetableAndFruit;
 
-	private FoodCPI foodCPI;
+	private Food food;
 
-	private TobaccoLiquorAndArticlesCPI tobaccoLiquorAndArticlesCPI;
+	private TobaccoLiquorAndArticles tobaccoLiquorAndArticles;
 
-	private ClothingCPI clothingCPI;
+	private Clothing clothing;
 
-	private HouseholdFacilitiesArticlesAndServicesCPI householdFacilitiesArticlesAndServicesCPI;
+	private HouseholdFacilitiesArticlesAndServices householdFacilitiesArticlesAndServices;
 
-	private HealthCareAndPersonalArticlesCPI healthCareAndPersonalArticlesCPI;
+	private HealthCareAndPersonalArticles healthCareAndPersonalArticles;
 
-	private TransportationAndCommunicationCPI transportationAndCommunicationCPI;
+	private TransportationAndCommunication transportationAndCommunication;
 
-	private RecreationEducationAndCultureArticlesCPI recreationEducationAndCultureArticlesCPI;
+	private RecreationEducationAndCultureArticles recreationEducationAndCultureArticles;
 
-	private ResidenceCPI residenceCPI;
+	private Residence residence;
 
-	public Indicator getUrbanHouseholdIndicator() {
-		return urbanHouseholdIndicator;
+	public Indicator getUrbanHousehold() {
+		return urbanHousehold;
 	}
 
-	public void setUrbanHouseholdIndicator(Indicator urbanHouseholdIndicator) {
-		this.urbanHouseholdIndicator = urbanHouseholdIndicator;
+	public void setUrbanHousehold(Indicator urbanHousehold) {
+		this.urbanHousehold = urbanHousehold;
 	}
 
-	public Indicator getRuralHouseholdIndicator() {
-		return ruralHouseholdIndicator;
+	public Indicator getRuralHousehold() {
+		return ruralHousehold;
 	}
 
-	public void setRuralHouseholdIndicator(Indicator ruralHouseholdIndicator) {
-		this.ruralHouseholdIndicator = ruralHouseholdIndicator;
+	public void setRuralHousehold(Indicator ruralHousehold) {
+		this.ruralHousehold = ruralHousehold;
 	}
 
-	public Indicator getFoodIndicator() {
-		return foodIndicator;
+	public Indicator getNonFood() {
+		return nonFood;
 	}
 
-	public void setFoodIndicator(Indicator foodIndicator) {
-		this.foodIndicator = foodIndicator;
+	public void setNonFood(Indicator nonFood) {
+		this.nonFood = nonFood;
 	}
 
-	public Indicator getNonFoodIndicator() {
-		return nonFoodIndicator;
+	public Indicator getConsumerProducts() {
+		return consumerProducts;
 	}
 
-	public void setNonFoodIndicator(Indicator nonFoodIndicator) {
-		this.nonFoodIndicator = nonFoodIndicator;
+	public void setConsumerProducts(Indicator consumerProducts) {
+		this.consumerProducts = consumerProducts;
 	}
 
-	public Indicator getConsumerProductsIndicator() {
-		return consumerProductsIndicator;
+	public Indicator getService() {
+		return service;
 	}
 
-	public void setConsumerProductsIndicator(Indicator consumerProductsIndicator) {
-		this.consumerProductsIndicator = consumerProductsIndicator;
+	public void setService(Indicator service) {
+		this.service = service;
 	}
 
-	public Indicator getServiceIndicator() {
-		return serviceIndicator;
+	public Indicator getNonFoodAndEnergy() {
+		return nonFoodAndEnergy;
 	}
 
-	public void setServiceIndicator(Indicator serviceIndicator) {
-		this.serviceIndicator = serviceIndicator;
+	public void setNonFoodAndEnergy(Indicator nonFoodAndEnergy) {
+		this.nonFoodAndEnergy = nonFoodAndEnergy;
 	}
 
-	public Indicator getNonFoodAndEnergyIndicator() {
-		return nonFoodAndEnergyIndicator;
+	public Indicator getNonVegetableAndFruit() {
+		return nonVegetableAndFruit;
 	}
 
-	public void setNonFoodAndEnergyIndicator(Indicator nonFoodAndEnergyIndicator) {
-		this.nonFoodAndEnergyIndicator = nonFoodAndEnergyIndicator;
+	public void setNonVegetableAndFruit(Indicator nonVegetableAndFruit) {
+		this.nonVegetableAndFruit = nonVegetableAndFruit;
 	}
 
-	public Indicator getNonVegetableAndFruitIndicator() {
-		return nonVegetableAndFruitIndicator;
+	public Food getFood() {
+		return food;
 	}
 
-	public void setNonVegetableAndFruitIndicator(
-			Indicator nonVegetableAndFruitIndicator) {
-		this.nonVegetableAndFruitIndicator = nonVegetableAndFruitIndicator;
+	public void setFood(Food food) {
+		this.food = food;
 	}
 
-	public FoodCPI getFoodCPI() {
-		return foodCPI;
+	public TobaccoLiquorAndArticles getTobaccoLiquorAndArticles() {
+		return tobaccoLiquorAndArticles;
 	}
 
-	public void setFoodCPI(FoodCPI foodCPI) {
-		this.foodCPI = foodCPI;
+	public void setTobaccoLiquorAndArticles(
+			TobaccoLiquorAndArticles tobaccoLiquorAndArticles) {
+		this.tobaccoLiquorAndArticles = tobaccoLiquorAndArticles;
 	}
 
-	public TobaccoLiquorAndArticlesCPI getTobaccoLiquorAndArticlesCPI() {
-		return tobaccoLiquorAndArticlesCPI;
+	public Clothing getClothing() {
+		return clothing;
 	}
 
-	public void setTobaccoLiquorAndArticlesCPI(
-			TobaccoLiquorAndArticlesCPI tobaccoLiquorAndArticlesCPI) {
-		this.tobaccoLiquorAndArticlesCPI = tobaccoLiquorAndArticlesCPI;
+	public void setClothing(Clothing clothing) {
+		this.clothing = clothing;
 	}
 
-	public ClothingCPI getClothingCPI() {
-		return clothingCPI;
+	public HouseholdFacilitiesArticlesAndServices getHouseholdFacilitiesArticlesAndServices() {
+		return householdFacilitiesArticlesAndServices;
 	}
 
-	public void setClothingCPI(ClothingCPI clothingCPI) {
-		this.clothingCPI = clothingCPI;
+	public void setHouseholdFacilitiesArticlesAndServices(
+			HouseholdFacilitiesArticlesAndServices householdFacilitiesArticlesAndServices) {
+		this.householdFacilitiesArticlesAndServices = householdFacilitiesArticlesAndServices;
 	}
 
-	public HouseholdFacilitiesArticlesAndServicesCPI getHouseholdFacilitiesArticlesAndServicesCPI() {
-		return householdFacilitiesArticlesAndServicesCPI;
+	public HealthCareAndPersonalArticles getHealthCareAndPersonalArticles() {
+		return healthCareAndPersonalArticles;
 	}
 
-	public void setHouseholdFacilitiesArticlesAndServicesCPI(
-			HouseholdFacilitiesArticlesAndServicesCPI householdFacilitiesArticlesAndServicesCPI) {
-		this.householdFacilitiesArticlesAndServicesCPI = householdFacilitiesArticlesAndServicesCPI;
+	public void setHealthCareAndPersonalArticles(
+			HealthCareAndPersonalArticles healthCareAndPersonalArticles) {
+		this.healthCareAndPersonalArticles = healthCareAndPersonalArticles;
 	}
 
-	public HealthCareAndPersonalArticlesCPI getHealthCareAndPersonalArticlesCPI() {
-		return healthCareAndPersonalArticlesCPI;
+	public TransportationAndCommunication getTransportationAndCommunication() {
+		return transportationAndCommunication;
 	}
 
-	public void setHealthCareAndPersonalArticlesCPI(
-			HealthCareAndPersonalArticlesCPI healthCareAndPersonalArticlesCPI) {
-		this.healthCareAndPersonalArticlesCPI = healthCareAndPersonalArticlesCPI;
+	public void setTransportationAndCommunication(
+			TransportationAndCommunication transportationAndCommunication) {
+		this.transportationAndCommunication = transportationAndCommunication;
 	}
 
-	public TransportationAndCommunicationCPI getTransportationAndCommunicationCPI() {
-		return transportationAndCommunicationCPI;
+	public RecreationEducationAndCultureArticles getRecreationEducationAndCultureArticles() {
+		return recreationEducationAndCultureArticles;
 	}
 
-	public void setTransportationAndCommunicationCPI(
-			TransportationAndCommunicationCPI transportationAndCommunicationCPI) {
-		this.transportationAndCommunicationCPI = transportationAndCommunicationCPI;
+	public void setRecreationEducationAndCultureArticles(
+			RecreationEducationAndCultureArticles recreationEducationAndCultureArticles) {
+		this.recreationEducationAndCultureArticles = recreationEducationAndCultureArticles;
 	}
 
-	public RecreationEducationAndCultureArticlesCPI getRecreationEducationAndCultureArticlesCPI() {
-		return recreationEducationAndCultureArticlesCPI;
+	public Residence getResidence() {
+		return residence;
 	}
 
-	public void setRecreationEducationAndCultureArticlesCPI(
-			RecreationEducationAndCultureArticlesCPI recreationEducationAndCultureArticlesCPI) {
-		this.recreationEducationAndCultureArticlesCPI = recreationEducationAndCultureArticlesCPI;
-	}
-
-	public ResidenceCPI getResidenceCPI() {
-		return residenceCPI;
-	}
-
-	public void setResidenceCPI(ResidenceCPI residenceCPI) {
-		this.residenceCPI = residenceCPI;
+	public void setResidence(Residence residence) {
+		this.residence = residence;
 	}
 
 }
