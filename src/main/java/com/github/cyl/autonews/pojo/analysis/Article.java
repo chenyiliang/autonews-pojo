@@ -6,7 +6,16 @@ public class Article {
 	private int year;
 	private int month;
 	private String title;
-	private List<Section> sectinos;
+	private List<Section> sections;
+
+	public Article() {
+	}
+
+	public Article(int year, int month, String title) {
+		this.year = year;
+		this.month = month;
+		this.title = title;
+	}
 
 	public int getYear() {
 		return year;
@@ -32,12 +41,17 @@ public class Article {
 		this.title = title;
 	}
 
-	public List<Section> getSectinos() {
-		return sectinos;
+	public List<Section> getSections() {
+		return sections;
 	}
 
-	public void setSectinos(List<Section> sectinos) {
-		this.sectinos = sectinos;
+	public void setSectinos(List<Section> sections) {
+		this.sections = sections;
+	}
+
+	@Override
+	public String toString() {
+		return "Article [year=" + year + ", month=" + month + ", title=" + title + ", sections=" + sections + "]";
 	}
 
 }
