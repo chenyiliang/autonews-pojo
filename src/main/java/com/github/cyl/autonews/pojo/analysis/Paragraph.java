@@ -12,5 +12,5 @@ public class Paragraph {
 	public void setSentences(List<String> sentences) {
 		this.sentences = sentences;
 	}
-	
+
 }
