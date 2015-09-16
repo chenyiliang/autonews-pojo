@@ -4,6 +4,14 @@ public class MonthPPI extends PPI {
 	private int year;
 	private int month;
 
+	public MonthPPI() {
+	}
+
+	public MonthPPI(int year, int month) {
+		this.year = year;
+		this.month = month;
+	}
+
 	public int getYear() {
 		return year;
 	}
