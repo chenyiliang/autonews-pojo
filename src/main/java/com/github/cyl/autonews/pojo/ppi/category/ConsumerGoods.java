@@ -2,7 +2,7 @@ package com.github.cyl.autonews.pojo.ppi.category;
 
 import com.github.cyl.autonews.pojo.indicator.Indicator;
 
-public class ConsumerGoodsPPI extends Indicator {
+public class ConsumerGoods extends Indicator {
 	private Indicator food;// 食品
 	private Indicator clothing;// 衣着
 	private Indicator articlesForDailyUse;// 一般日用品
