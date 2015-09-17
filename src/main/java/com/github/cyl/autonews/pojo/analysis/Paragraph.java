@@ -3,21 +3,20 @@ package com.github.cyl.autonews.pojo.analysis;
 import java.util.List;
 
 public class Paragraph {
-	private List<String> sentences;
+	private List<Sentence> sentences;
 
 	public Paragraph() {
-		// TODO Auto-generated constructor stub
 	}
 
-	public Paragraph(List<String> sentences) {
+	public Paragraph(List<Sentence> sentences) {
 		this.sentences = sentences;
 	}
 
-	public List<String> getSentences() {
+	public List<Sentence> getSentences() {
 		return sentences;
 	}
 
-	public void setSentences(List<String> sentences) {
+	public void setSentences(List<Sentence> sentences) {
 		this.sentences = sentences;
 	}
 
