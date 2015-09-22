@@ -6,6 +6,7 @@ public class Sentence {
 	private String sentence;
 	private List<Clause> clauses;
 	private List<String> terms;
+	private int type;
 
 	public Sentence() {
 	}
@@ -49,9 +50,17 @@ public class Sentence {
 		this.terms = terms;
 	}
 
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
 	@Override
 	public String toString() {
-		return "Sentence [sentence=" + sentence + ", clauses=" + clauses + ", terms=" + terms + "]";
+		return "Sentence [sentence=" + sentence + ", clauses=" + clauses + ", terms=" + terms + ", type=" + type + "]";
 	}
 
 }
