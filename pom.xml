@@ -5,6 +5,14 @@
 	<artifactId>autonews-pojo</artifactId>
 	<version>0.0.5</version>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.apdplat</groupId>
+			<artifactId>word</artifactId>
+			<version>1.3</version>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>

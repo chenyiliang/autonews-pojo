@@ -2,10 +2,12 @@ package com.github.cyl.autonews.pojo.analysis;
 
 import java.util.List;
 
+import org.apdplat.word.segmentation.Word;
+
 public class Sentence {
 	private String sentence;
 	private List<Clause> clauses;
-	private List<String> terms;
+	private List<Word> words;
 	private int type;
 
 	public Sentence() {
@@ -20,10 +22,10 @@ public class Sentence {
 		this.clauses = clauses;
 	}
 
-	public Sentence(String sentence, List<Clause> clauses, List<String> terms) {
+	public Sentence(String sentence, List<Clause> clauses, List<Word> words) {
 		this.sentence = sentence;
 		this.clauses = clauses;
-		this.terms = terms;
+		this.words = words;
 	}
 
 	public String getSentence() {
@@ -42,12 +44,12 @@ public class Sentence {
 		this.clauses = clauses;
 	}
 
-	public List<String> getTerms() {
-		return terms;
+	public List<Word> getWords() {
+		return words;
 	}
 
-	public void setTerms(List<String> terms) {
-		this.terms = terms;
+	public void setWords(List<Word> words) {
+		this.words = words;
 	}
 
 	public int getType() {
@@ -60,7 +62,7 @@ public class Sentence {
 
 	@Override
 	public String toString() {
-		return "Sentence [sentence=" + sentence + ", clauses=" + clauses + ", terms=" + terms + ", type=" + type + "]";
+		return "Sentence [sentence=" + sentence + ", clauses=" + clauses + ", words=" + words + ", type=" + type + "]";
 	}
 
 }
