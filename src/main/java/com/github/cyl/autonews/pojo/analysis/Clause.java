@@ -1,7 +1,12 @@
 package com.github.cyl.autonews.pojo.analysis;
 
+import java.util.List;
+
+import org.apdplat.word.segmentation.Word;
+
 public class Clause {
 	private String clause;
+	private List<Word> words;
 	private int type;
 
 	public Clause() {
@@ -14,6 +19,12 @@ public class Clause {
 
 	public Clause(String clause, int type) {
 		this.clause = clause;
+		this.type = type;
+	}
+
+	public Clause(String clause, List<Word> words, int type) {
+		this.clause = clause;
+		this.words = words;
 		this.type = type;
 	}
 
@@ -31,6 +42,14 @@ public class Clause {
 
 	public void setType(int type) {
 		this.type = type;
+	}
+
+	public List<Word> getWords() {
+		return words;
+	}
+
+	public void setWords(List<Word> words) {
+		this.words = words;
 	}
 
 	@Override
