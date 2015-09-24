@@ -9,6 +9,7 @@ public class Sentence {
 	private List<Clause> clauses;
 	private List<Word> words;
 	private int type;
+	private double similarity;
 
 	public Sentence() {
 	}
@@ -60,9 +61,17 @@ public class Sentence {
 		this.type = type;
 	}
 
-	@Override
-	public String toString() {
-		return "Sentence [sentence=" + sentence + ", clauses=" + clauses + ", words=" + words + ", type=" + type + "]";
+	public double getSimilarity() {
+		return similarity;
 	}
 
+	public void setSimilarity(double similarity) {
+		this.similarity = similarity;
+	}
+
+	@Override
+	public String toString() {
+		return "Sentence [sentence=" + sentence + ", clauses=" + clauses + ", words=" + words + ", type=" + type
+				+ ", similarity=" + similarity + "]";
+	}
 }
