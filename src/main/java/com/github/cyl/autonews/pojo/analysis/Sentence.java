@@ -8,8 +8,8 @@ public class Sentence {
 	private String sentence;
 	private List<Clause> clauses;
 	private List<Word> words;
-	private int type;
-	private double similarity;
+	private int type;// 0-普通语句，1-余秋梅，2-摘选语录
+	private double similarity;// 当type=2时，要显示这个相似度
 
 	public Sentence() {
 	}
